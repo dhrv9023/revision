@@ -35,22 +35,22 @@ using namespace std;
 
 // 2 SUM (RETURN NUMBERS)
 
-int main(){
-    vector<int> ar={1,2,6,3,7,4,2};
-    sort(ar.begin(),ar.end());
-    int target= 5;
-    int k=0;
-    int j = ar.size()-1;
-    while(k<j){
-        if (ar[k]+ar[j]==target){
-            cout<<ar[k]<<","<< ar[j]<<endl;
-            break;
-        }
-        else if(ar[k]+ar[j]>target){
-            j--;
-        }
-        else{
-            k++;
-        }
-    }
-}
+// int main(){
+//     vector<int> ar={1,2,6,3,7,4,2};
+//     sort(ar.begin(),ar.end());
+//     int target= 5;
+//     int k=0;
+//     int j = ar.size()-1;
+//     while(k<j){
+//         if (ar[k]+ar[j]==target){
+//             cout<<ar[k]<<","<< ar[j]<<endl;
+//             break;
+//         }
+//         else if(ar[k]+ar[j]>target){
+//             j--;
+//         }
+//         else{
+//             k++;
+//         }
+//     }
+// }
