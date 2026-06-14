@@ -22,17 +22,33 @@
 
 #MAXIMUM SUBARRAY
 
-def sbarr(nums):
-    mxsub={}
-    cursum=0
-    for i in nums:
-        if cursum < 0:
-            cursum=0
-        cursum+=0
-        mxsub=max(mxsub,cursum)
-    return cursum    
+# def sbarr(nums):
+#     mxsub=nums[0]
+#     cursum=0
+#     for i in nums:
+#         if cursum < 0:
+#             cursum=0
+#         cursum+=i
+#         mxsub=max(mxsub,cursum)
+#     return mxsub    
 
 
 
-nums=[-2,1,-3,4,-1,2,1,-5,4]
-print(sbarr(nums))
+# nums=[-2,1,-3,4,-1,2,1,-5,4]
+# print(sbarr(nums))
+
+
+#CONTINS DUPLICATE
+
+# def dup(nums):
+#     hsset=set()
+#     for i in nums:
+#         if i in hsset:
+#             return True
+#         hsset.add(i)
+#     return False    
+
+
+# nums = [1,2,3,6]    
+# print(dup(nums))
+
