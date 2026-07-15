@@ -8,17 +8,18 @@
 
 # 2 SUM
 
-# def two_sum(nums,target):
-#     hshmpp={}
-#     for index,value in enumerate(nums):
-#         diff= target-value
-#         if diff in hshmpp:
-#             return {hshmpp[diff],index}
-#         hshmpp[value]=index
+def two_sum(nums,target):
+    hshmpp={}
+    for index,value in enumerate(nums):
+        diff= target-value
+        if diff in hshmpp:
+            return {hshmpp[diff],index}
+        hshmpp[value]=index
     
-# nums=[2,7,11,15]
-# target = 9
-# print(two_sum(nums,target))    
+nums=[2,7,11,15]
+target = 9
+print(f"the index of the {target} is ",end=' ')
+print(two_sum(nums,target))    
 
 #MAXIMUM SUBARRAY
 
