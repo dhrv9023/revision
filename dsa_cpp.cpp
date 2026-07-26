@@ -6,11 +6,12 @@ int largest_element(vector<int>arr){
     int slargest=-1;
     for(int i=0;i<arr.size();i++){
         if (arr[i] > largest){
+            slargest=largest;
             largest=arr[i];
         }
-        if(arr[i]>largest && slargest<largest){
-            largest=arr[i];
-            slargest=largest;
+        if(arr[i]>slargest && arr[i]<largest){
+            slargest=arr[i];
+            
         }
     }
     return slargest;
